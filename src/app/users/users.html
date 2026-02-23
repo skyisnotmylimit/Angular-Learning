@@ -1,0 +1,17 @@
+<div>
+  <app-search-bar></app-search-bar>
+  <div class="flex flex-row gap-2">
+    <div class="w-1/2">
+      @for(user of userData;track user.id) {
+        <ul>
+          <li>
+            <app-profile-tab [user]="user" (tabClickEvent)="onTabClick($event)"></app-profile-tab>
+          </li>
+        </ul>
+      }
+    </div>
+    <div class="w-1/2">
+      <app-card [user]="selectedUser"></app-card>
+    </div>
+  </div>
+</div>
