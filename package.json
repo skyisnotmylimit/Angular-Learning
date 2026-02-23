@@ -1,5 +1,5 @@
 {
-  "name": "practice-project",
+  "name": "Angular-Learning",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:practice-project": "node dist/practice-project/server/server.mjs"
+    "serve:ssr:Angular-Learning": "node dist/Angular-Learning/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
