@@ -1,5 +1,5 @@
 {
-  "name": "Angular-Learning",
+  "name": "angular-learning",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Angular-Learning": "node dist/Angular-Learning/server/server.mjs"
+    "serve:ssr:angular-learning": "node dist/angular-learning/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
