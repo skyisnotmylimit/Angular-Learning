@@ -8,5 +8,5 @@ import { Users } from './users/users';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('practice-project');
+  protected readonly title = signal('Angular-Learning');
 }
