@@ -1,0 +1,16 @@
+<h1>Home Page</h1>
+<h3>Search the profile !</h3>
+<form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+  <input
+    type="text"
+    placeholder="Search for profile"
+    name="search"
+    required
+    [(ngModel)]="formData.search"
+    #search="ngModel"
+  />
+  @if (search.invalid && (search.touched || searchForm.submitted)) {
+    <p>Please enter a profile name.</p>
+  }
+  <button type="submit">Search</button>
+</form>
