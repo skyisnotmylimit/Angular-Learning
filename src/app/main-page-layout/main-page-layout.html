@@ -1,0 +1,11 @@
+<div class="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+  <h1 class="mb-6 text-2xl font-semibold text-slate-900">Device Catalog</h1>
+  <section class="flex flex-col gap-6 lg:flex-row">
+    <div class="flex-1 min-w-0">
+      <app-phone-list (listItemSelect)="onSelectPhone($event)"></app-phone-list>
+    </div>
+    <div class="flex-1 min-w-0">
+      <app-phone-view [selectedPhoneId]="selectedPhoneId()"></app-phone-view>
+    </div>
+  </section>
+</div>
