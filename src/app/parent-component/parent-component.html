@@ -1,0 +1,13 @@
+<p>parent-component works!</p>
+<input type="text" placeholder="Enter the name" [(ngModel)]="inputString">
+<button (click)="onButtonClick()">Submit</button>
+<br>
+<app-lifecycle-methods [inputFromParent]="inputToChild()"></app-lifecycle-methods>
+<!-- <ol>
+  @for(name of listNames();track name) {
+    <li>{{$index+1}} {{name | capitalise}}</li>
+  }
+  @empty{
+    <p>No names found</p>
+  }
+</ol> -->
