@@ -1,0 +1,17 @@
+<p>{{ counter$ | async }}</p>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="reset()">Reset</button>
+
+<h2>Posts</h2>
+@if (loading$ | async) {
+  <p>Loading...</p>
+}
+@if (error$ | async; as error) {
+  <p>Error: {{ error }}</p>
+}
+<ul>
+  @for (post of posts$ | async; track post.id) {
+    <li>{{ post.title }}</li>
+  }
+</ul>
