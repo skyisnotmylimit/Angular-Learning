@@ -1,8 +1,8 @@
 <p>parent-component works!</p>
-<input type="text" placeholder="Enter the name" [(ngModel)]="inputString">
+<!-- <input type="text" placeholder="Enter the name" [(ngModel)]="inputString">
 <button (click)="onButtonClick()">Submit</button>
 <br>
-<app-lifecycle-methods [inputFromParent]="inputToChild()"></app-lifecycle-methods>
+<app-lifecycle-methods [inputFromParent]="inputToChild()"></app-lifecycle-methods> -->
 <!-- <ol>
   @for(name of listNames();track name) {
     <li>{{$index+1}} {{name | capitalise}}</li>
@@ -11,3 +11,6 @@
     <p>No names found</p>
   }
 </ol> -->
+<br>
+<p>count: {{count}}</p>
+<app-child-component [(count)]="count"></app-child-component>

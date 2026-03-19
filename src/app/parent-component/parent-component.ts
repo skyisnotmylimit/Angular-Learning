@@ -1,17 +1,18 @@
-import { Component,signal} from '@angular/core';
+import { Component,signal,Input} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { LifecycleMethods } from "../lifecycle-methods/lifecycle-methods";
 import { CapitalisePipe } from '../pipes/capitalise-pipe';
+import { ChildComponent } from "../child-component/child-component";
 
 @Component({
   selector: 'app-parent-component',
-  imports: [FormsModule, LifecycleMethods, CapitalisePipe],
+  imports: [FormsModule, LifecycleMethods, CapitalisePipe, ChildComponent],
   templateUrl: './parent-component.html',
   styleUrls: ['./parent-component.css'],
 })
 export class ParentComponent {
-  inputString = signal<string>("");
-  inputToChild = signal<string>("");
+  count:number = 0;
+  // inputToChild = signal<string>("");
 
   listNames = signal<string[]>([
     "Shubham",
@@ -21,9 +22,6 @@ export class ParentComponent {
     "Priyam",
   ]);
 
-  onButtonClick() {
-    this.inputToChild.set(this.inputString());
-  }
 }
 
 

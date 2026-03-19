@@ -3,4 +3,7 @@
 <br>
 <div>
   <p>{{typedText()}}</p>
+  @if (result()) {
+    <pre>{{ result() | json }}</pre>
+  }
 </div>

@@ -1,0 +1,14 @@
+<p>child-component works!</p>
+<div class="flex flex-row gap-3">
+  <button (click)="onButtonClick($event)" id="increment" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    +1
+  </button>
+  <button (click)="onButtonClick($event)" id="decrement" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    -1
+  </button>
+</div>
+<p>Current Count from Child: {{count()}}</p>
+<br>
+@for(user of users$ | async;track user.id) {
+  <p>{{user | json}}</p>
+}
